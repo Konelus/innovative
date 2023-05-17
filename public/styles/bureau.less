@@ -1,0 +1,59 @@
+.show-div
+{
+  padding-bottom: 22px;
+  .search-div
+  {
+    input[type='text'], select, .btn { margin-right: 10px; }
+    input[type='text'], select { width: 200px; float: left; }
+    .btn { width: 100px; }
+  }
+  .navigation-div
+  {
+    text-align: right;
+    a
+    {
+      width: 150px; margin-left: 10px;
+      span { font-weight: bold; }
+      .orders-completed { color: #00E83B; }
+      .orders-waiting { color: #E80005; }
+    }
+
+  }
+}
+
+.statistics-div
+{
+  background: #343A40; color: white; margin: 0 0 22px 0; text-align: center; border: solid 1px #DEE2E6;
+  .statistics
+  {
+    border: solid 1px #DEE2E6; padding: 8px;
+    .current { padding-top: 5px; }
+
+    span { padding-bottom: 2px; }
+    .total-created { border-bottom: solid 1px #17A2B8; }
+    .total-completed { border-bottom: solid 1px #28A745; }
+
+    .statistics-first { border-bottom: solid 1px #CB3434; }
+    .statistics-second { border-bottom: solid 1px #C1C131; }
+
+  }
+}
+
+.modal-body
+{
+  .visitor-last-orders
+  {
+    border-left: solid 1px #DEE2E6;
+    .last-orders-title { margin: 0; padding-bottom: 15px; text-align: center; border-bottom: solid 1px #DEE2E6; font-weight: bold; font-size: 18px; }
+    .last-orders-list
+    {
+      overflow-y: auto; height: 250px; margin-top: 10px;
+      .current-last-order
+      {
+        height: 25px; margin: 5px 0;
+        label { font-weight: bold; padding-left: 5px; }
+        .missed { color: red; }
+      }
+    }
+  }
+}

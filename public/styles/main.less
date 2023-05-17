@@ -1,0 +1,69 @@
+body
+{
+  cursor: default; background: #959595; font-family: 'Times New Roman', sans-serif;
+
+  .alert { color: white; text-align: center; border: 0; }
+  .alert-info { background: #17A2B8; }
+  .alert-danger { background: #D36A6A; }
+  .alert-success { background: #28A745; }
+  .alert-dark { background: #343A40; }
+}
+
+header, .nav-main-div { background: #343A40; color: white; }
+
+header
+{
+  .site-header
+  {
+    height: 76px; border-bottom: solid 1px #808080;
+    .title-div
+    {
+      div { float: left; }
+      img { height: 47px; width: 45px; margin: 13px 0 0 15px; }
+      .title { margin: 18px 20px; font-size: 25px; }
+    }
+    .user-div
+    {
+      text-align: center; font-size: 20px;
+      .greetings { padding-top: 3px; color: #D3D3D3 !important; }
+    }
+  }
+
+  .page-header
+  {
+    height: 40px;
+    .pre-nav { border-left: solid 1px #808080; }
+    .title { text-align: center; font-size: 18px; padding-top: 4px; }
+    .exit
+    {
+      width: 58px; margin: auto;
+      input { width: 100%; background: #343A40; border: 0; color: white; padding-top: 5px; font-size: 18px; }
+    }
+  }
+}
+
+main
+{
+  .nav-main-div
+  {
+    padding: 0;
+    nav
+    {
+      height: calc(100vh - 116PX);  padding-top: 8px;
+      a
+      {
+        color: white; text-decoration: none;
+        .nav-div { text-align: center; margin-bottom: 8px; height: 46px; padding: 10px; border-top: solid 1px #808080; border-bottom: solid 1px #808080; }
+        .nav-div:hover { background: linear-gradient(to right, grey 1%, #343A40 99%); }
+      }
+    }
+  }
+}
+
+footer
+{
+  height: 58px; width: 100%; position: fixed; bottom: 0; left: 0; background-image: url("/public/img/autumn.png"); border-top: solid 1px #808080; text-align: center;
+  .title, .description { text-shadow: #343A40 0 0 2px; }
+  .title { color: white; border-top: solid 1px #343A40; padding-top: 4px; font-weight: bold; }
+  .description { color: #FF0009; }
+}
